@@ -31,8 +31,16 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testAddpositiveNum()
     {
-        assertTrue( true );
+        assertEquals(30, App.add(10,20) );
+    }
+    public void testAddsmallnum()
+    {
+	assertEquals(15, App.add(10,5) );
+    }
+    public void testAddzero()
+    {
+	assertEquals(0, App.add(0,0) );
     }
 }
